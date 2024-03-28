@@ -1,0 +1,126 @@
+/* style.css */
+
+/* Reset default margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Set up font */
+html {
+    font-family: 'Roboto', 'Italia', sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+.header {
+    background-color: #FFD700;
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #000000;
+    font-family: 'Roboto', 'Italia', sans-serif;
+    margin: 0;
+    text-align: center; /* Horizontally center align the h1 text */
+    flex: 1; /* Allow the h1 to take up available space */
+    margin-left: 100px; /* Add a margin to the left */
+}
+
+/* Logo styles */
+.logo {
+    margin-right: auto; /* Push the logo to the right */
+    text-align: right; /* Align the logo to the right */
+}
+
+.logo-img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+/* Content styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.content {
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.content2 {
+    padding: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.card-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.status-card {
+    background-color: white;
+    box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    display: none;
+}
+
+.statusReading {
+    font-size: 1rem;
+}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.connectButton {
+    background-color: #24af37;
+}
+
+.disconnectButton {
+    background-color: #d13a30;
+}
+
+.gray-label {
+    color: #bebebe;
+    font-size: 1rem;
+}
+
+.reading {
+    font-size: 1rem;
+}
+
+/* For mobile devices, ensure content is centered */
+@media (max-width: 767px) {
+    .card-grid {
+        grid-template-columns: 1fr; /* Set a single column layout for smaller screens */
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
